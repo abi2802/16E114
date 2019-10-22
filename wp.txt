@@ -1,0 +1,322 @@
+1)<html>
+<head></head>
+    <body>
+        <table border="1" width="100%" height="300px">
+            <tr>
+                <td colspan="4" style="text-align: center;" >Welcome to libraries of KCE</td>
+            </tr>
+            <tr>
+                <td rowspan="3" width="25%"> <form action="">
+                   
+                       <button> <a href="form2.html" target="myFrame"> IT department</a></button><br>
+                       <button> <a href="form3.html" target="myFrame"> EEE department</a></button><br>
+                       <button> <a href="form4.html" target="myFrame"> CSE department</a></button><br>
+                </form> </td>
+                <td colspan="3" rowspan="3">
+                        <iframe src="form1.html" width="100%" height="100%" name="myFrame"></iframe>
+                </td>
+            </tr>
+            
+        </table>
+    </body>
+</html>
+FORM1.html:
+<html>
+<body>
+    <h1>Select any option on the left to view libraries for selected department</h1>
+</body>
+</html>
+FORM2.html:
+<html>
+<body>
+    <p>The IT department</p>
+    <h1>Available books</h1>
+    <ul>
+        <li>CGM</li>
+        <li>CBT</li>
+        <li>WEB Programming</li>
+        <li>Information Security</li>
+        <li>Software Engineering</li>
+    </ul>
+</body>
+</html>
+FORM3.html:
+<html>
+<body>
+    <p>The EEE department</p>
+    <h1>Available books</h1>
+    <ul>
+        <li>mems</li>
+        <li>EEE-1</li>
+        <li>EEE-2</li>
+        <li>EEE-3</li>
+        <li>EEE-4</li>
+    </ul>
+</body>
+</html>
+FORM4.html:
+<html>
+<body>
+    <p>The CSE department</p>
+    <h1>Available books</h1>
+    <ul>
+        <li>CGM</li>
+        <li>DAA</li>
+        <li>ADS</li>
+        <li>DS</li>
+        <li>MAD</li>
+    </ul>
+</body>
+</html>
+
+2)HTMl and DHTML
+<!DOCTYPE html>
+<html>
+<head>
+<title> HTML and DHTML</title>
+<script type=”text/css”>
+function bgchange(bg){
+document.body.style.background=bg;
+}
+</script>
+</head>
+<body>
+<b> Mouse cursor over the square and the background color will be changed </b>
+<table width=”300” height=”100”>
+<tr>
+	<td onmousehover=”bgchange(‘red’)”
+onmouseout=”bgchange(‘transparent’)”
+bgcolor=”red”
+</td>
+	<td onmousehover=”bgchange(‘blue’)”
+onmouseout=”bgchange(‘transparent’)”
+bgcolor=”blue”
+</td>
+	<td onmousehover=”bgchange(‘green’)”
+onmouseout=”bgchange(‘transparent’)”
+bgcolor=”green”
+</td>
+</tr>
+</table>
+</body>
+</html>
+3)a]Javascript to display text messages
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript to display messages</h1>
+<button type=”button” onclick=”My_Function()”>Click Me!! </button>
+<p id="demo"></p>
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+var i=0;
+var len=cars.length;
+var text=””
+for(;i<len;i++){
+text+=cars[i]+”<br>”;}
+function My_Function(){
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
+
+3)b]JavaScript to convert dollar to rupees
+<html>
+<body>
+<p> Converting Dollar to Rupees
+<p> The converted value
+<p id=”demo”></p>
+<script>
+Function convert(dollar){
+Rupees=dollar*68.8;
+Return rupees;
+}
+Var dollar=prompt(“Enter the dollar value”)
+Document.getElementById(“demo”).innerHTML=convert(dollar);
+</script>
+</body>
+</html>
+4)a]To display text messages using vbscript
+<!DOCTYPE html>
+<body>
+<script type=”text/vbscript”>
+Dim var1
+Dim var2
+Call add()
+Function add()
+Var1=10
+Var2=20
+Dim Var3
+Var3=Var1+Var2
+Msgbox Var3
+End Function
+Msgbox Var1
+Msgbox Var2
+Msgbox Var3
+Dim markE,markM,markT
+markE=90
+markM=87
+markT=markE+markM
+document.write(“Your mark in English” &markE& “<br>”)
+document.write(“Your mark in Maths” &markM& “<br>”)
+document.write(“Your Total Mark” &markT& “<br>”)
+Dim student(10),marks(10)
+Student(0)=”Pavithira”
+Marks(0)=90
+Student(1)=”Poojitha”
+Marks(1)=”99”
+Student(2)=”Nancy”
+Marks(2)=”98”
+document.write(student(0)& “has scored” &marks(0)& “<br>”)
+document.write(student(1)& “has scored” &marks(1)& “<br>”)
+document.write(student(2)& “has scored” &marks(2)& “<br>”)
+Dim arr(5)
+arr(0)=”1”
+arr(1)=”VB Script”
+arr(2)=100
+arr(3)=2.4
+arr(4)=#11/07/2013#
+arr(5)=#12.30PM#
+document.write(“Value Stored in array index 0:”  &arr(0)& “<br>”)
+document.write(“Value Stored in array index 1:”  &arr(1)& “<br>”)
+document.write(“Value Stored in array index 2:”  &arr(2)& “<br>”)
+document.write(“Value Stored in array index 3:”  &arr(3)& “<br>”)
+document.write(“Value Stored in array index 4:”  &arr(4)& “<br>”)
+document.write(“Value Stored in array index 5:”  &arr(5)& “<br>”)
+</script>
+</body>
+</html>
+4)b]Factorial of a number in vbscript
+<!DOCTYPE html>
+<body>
+<script language=”vbscript” type=”text/vbscript”>
+vf=1
+vnum=inputbox("enter a no")
+for i=2 to vnum 
+vf=vf*i
+next 
+msgbox vf
+</script>
+</body>
+</html>
+6)XML with DOM
+<?xml version=”1,0” encoding=”utf-18”?>
+<?xml_style sheet type=”text/css” href=”style.css”?>
+<book details>
+<book>
+<book_name> Web Programming </book_name>
+<author>Dr.Rajesh</author>
+<year>2017</year>
+</book>
+<book>
+<book_name>Mobile Application</book_name>
+<author>Suganya</author>
+<year>2017</year>
+</book>
+<book>
+<book_name>Wireless Network</book_name>
+<author>Saranya</author>
+<year>2017</year>
+</book>
+</book details>
+7)odbc connection formatting html and css
+$conn=odbc_connect('northwind','','');
+$sql="SELECT * FROM students"; 
+$rs=odbc_exec($conn,$sql);
+odbc_close($conn);
+<html>
+<body>
+<?php
+$conn=odbc_connect('northwind','','');
+if (!$conn)
+  {exit("Connection Failed: " . $conn);}
+$sql="SELECT * FROM students";
+$rs=odbc_exec($conn,$sql);
+if (!$rs)
+  {exit("Error in SQL");}
+echo "<table><tr>";
+echo "<th>Studentname</th>";
+echo "<th>Studentrollno</th>";
+echo "<th> Studentmail</th>";
+</tr>
+
+while (odbc_fetch_row($rs))
+{
+  $studentname=odbc_result($rs,"Student Name");
+  $studentrollno=odbc_result($rs,"Student Rollno");
+$studentmail=odbc_result($rs,"Student Mail");
+  echo "<tr><td>$studentname</td>";
+  echo "<td>$studentroll</td>"
+ echo "<td>$studentmail</td>"
+</tr>";
+}
+odbc_close($conn);
+echo "</table>";
+?>
+</body>
+</html>
+
+8)a] program using perl and cgi
+<!DOCTYPE html>
+<html>
+<head>
+<title> First perl </title>
+</head>
+<body>
+<a href=”www.perlweb.com/perl.pl”>Click ME </a>
+</body>
+</html>
+#!/usr/bin/perl
+print "Content-type:text/html\r\n\r\n";
+print '<html>';
+print '<head>';
+print '<title>Hello Word - First CGI Program</title>';
+print '</head>';
+print '<body>';
+print '<h2>Hello Word! This is my first CGI program</h2>';
+print '</body>';
+print '</html>';
+1;
+8)b]program to count using perl and cgi
+<!DOCTYPE html>
+<html>
+<head>
+<title> First perl </title>
+</head>
+<body>
+<a href=”www.visitors.com/perl.pl”>Click ME </a>
+</body>
+</html>
+
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use Fcntl qw(:DEFAULT :flock);
+my $file = 'mycount';
+sysopen(my $fh, $file, O_RDWR|O_CREAT) or die "Can't open '$file' $!\n";
+flock($fh, LOCK_EX) or die "Can't lock $file: $!\n";
+my $cnt = <$fh>;
+$cnt=0 unless $cnt;
+$cnt++;
+seek $fh, 0, 0;
+print ${fh} $cnt;
+close $fh or die "Can't close $file: $\n";
+print "Visitor count: $cnt\n";
+
+
+
+10)Creating a web application using ASP.NET
+
+<html xmlns="www.w3.org/1999/xhtml">
+<head runat="server">
+	<title> ASP.NET </title>
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div>
+	<%Response. Write( "HeIIo World"); %>
+	</div>
+	</form>
+</body>
+</html>
